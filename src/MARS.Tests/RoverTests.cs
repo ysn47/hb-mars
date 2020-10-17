@@ -14,8 +14,8 @@ namespace MARS.Tests
         [InlineData("5 5", "3 3 E", "MMRMMRMRRM", "5 1 E")]
         public void Rover_Should_Move_Correctly(string plateauPosition, string roverPosition, string commands, string expected)
         {
-            var plateauPoints = plateauPosition.Split(' ').Select(p => Convert.ToInt32(p)).ToArray();
-            IPlateau plateau = new Plateau(plateauPoints[0], plateauPoints[1]);
+            var maxPointCoordinates = plateauPosition.Split(' ').Select(p => Convert.ToInt32(p)).ToArray();
+            IPlateau plateau = new Plateau(maxPointCoordinates[0], maxPointCoordinates[1]);
 
             var roverData = roverPosition.Split(' ');
             IRover rover = new Rover(plateau, Convert.ToInt32(roverData[0]), Convert.ToInt32(roverData[1]), (Direction)Enum.Parse(typeof(Direction), roverData[2]));
@@ -26,10 +26,11 @@ namespace MARS.Tests
 
         [Theory]
         [InlineData("1 1", "0 0 N", "MMM")]
+        [InlineData("1 5", "0 0 N", "MMMMMM")]
         public void Out_Of_Plateau_Should_Throw_Exception(string plateauPosition, string roverPosition, string commands)
         {
-            var plateauPoints = plateauPosition.Split(' ').Select(p => Convert.ToInt32(p)).ToArray();
-            IPlateau plateau = new Plateau(plateauPoints[0], plateauPoints[1]);
+            var maxPointCoordinates = plateauPosition.Split(' ').Select(p => Convert.ToInt32(p)).ToArray();
+            IPlateau plateau = new Plateau(maxPointCoordinates[0], maxPointCoordinates[1]);
 
             var roverData = roverPosition.Split(' ');
             IRover rover = new Rover(plateau, Convert.ToInt32(roverData[0]), Convert.ToInt32(roverData[1]), (Direction)Enum.Parse(typeof(Direction), roverData[2]));
@@ -38,10 +39,11 @@ namespace MARS.Tests
 
         [Theory]
         [InlineData("5 5", "0 0 N", "S")]
+        [InlineData("5 5", "0 0 N", "LRLRLRLRLRLRLX")]
         public void Invalid_Command_Should_Throw_Exception(string plateauPosition, string roverPosition, string commands)
         {
-            var plateauPoints = plateauPosition.Split(' ').Select(p => Convert.ToInt32(p)).ToArray();
-            IPlateau plateau = new Plateau(plateauPoints[0], plateauPoints[1]);
+            var maxPointCoordinates = plateauPosition.Split(' ').Select(p => Convert.ToInt32(p)).ToArray();
+            IPlateau plateau = new Plateau(maxPointCoordinates[0], maxPointCoordinates[1]);
 
             var roverData = roverPosition.Split(' ');
             IRover rover = new Rover(plateau, Convert.ToInt32(roverData[0]), Convert.ToInt32(roverData[1]), (Direction)Enum.Parse(typeof(Direction), roverData[2]));

@@ -16,8 +16,8 @@
             var secondRoverData = Console.ReadLine().Split(' ');
             var secondRoverCommands = Console.ReadLine();
 
-            var plateauPoints = plateauPosition.Select(p => Convert.ToInt32(p)).ToArray();
-            IPlateau plateau = new Plateau(plateauPoints[0], plateauPoints[1]);
+            var maxPointCoordinates = plateauPosition.Select(p => Convert.ToInt32(p)).ToArray();
+            IPlateau plateau = new Plateau(maxPointCoordinates[0], maxPointCoordinates[1]);
 
             IRover firstRover = new Rover(plateau, Convert.ToInt32(firstRoverData[0]), Convert.ToInt32(firstRoverData[1]), (Direction)Enum.Parse(typeof(Direction), firstRoverData[2]));
             firstRover.ApplyCommandBulk(firstRoverCommands);
