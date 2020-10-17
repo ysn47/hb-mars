@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MARS.Core\Mars.Core.csproj" />
+    <ProjectReference Include="..\Mars.Core\Mars.Core.csproj" />
   </ItemGroup>
 
 </Project>
