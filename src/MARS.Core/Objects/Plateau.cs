@@ -1,7 +1,7 @@
 ﻿
-namespace MARS.Core.Objects
+namespace Mars.Core.Objects
 {
-    using MARS.Core.Abstract;
+    using Mars.Core.Abstract;
     public class Plateau : IPlateau
     {
         public Position BottomLeft { get; private set; } = new Position(0, 0);

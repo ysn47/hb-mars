@@ -1,6 +1,6 @@
-﻿using MARS.Core.Objects;
+﻿using Mars.Core.Objects;
 
-namespace MARS.Core.Abstract
+namespace Mars.Core.Abstract
 {
     public interface IPlateau
     {

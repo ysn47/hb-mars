@@ -1,6 +1,6 @@
-﻿namespace MARS.Core.Objects
+﻿namespace Mars.Core.Objects
 {
-    using MARS.Core.Abstract;
+    using Mars.Core.Abstract;
     using System;
 
     public class Rover : IRover

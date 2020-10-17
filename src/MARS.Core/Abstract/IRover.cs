@@ -1,4 +1,4 @@
-﻿namespace MARS.Core.Abstract
+﻿namespace Mars.Core.Abstract
 {
     public interface IRover
     {

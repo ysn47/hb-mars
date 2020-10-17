@@ -1,8 +1,8 @@
-namespace MARS.Tests
+namespace Mars.Tests
 {
-    using MARS.Core;
-    using MARS.Core.Abstract;
-    using MARS.Core.Objects;
+    using Mars.Core;
+    using Mars.Core.Abstract;
+    using Mars.Core.Objects;
     using System;
     using System.Linq;
     using Xunit;

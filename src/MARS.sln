@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MARS.ConsoleApp", "MARS.Console\MARS.ConsoleApp.csproj", "{A5F983C1-11F3-401B-BDAA-05118647C823}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mars.ConsoleApp", "MARS.Console\Mars.ConsoleApp.csproj", "{A5F983C1-11F3-401B-BDAA-05118647C823}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MARS.Core", "MARS.Core\MARS.Core.csproj", "{FA71C62A-485F-4F6D-9705-2E4D516E758C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mars.Core", "MARS.Core\Mars.Core.csproj", "{FA71C62A-485F-4F6D-9705-2E4D516E758C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MARS.Tests", "MARS.Tests\MARS.Tests.csproj", "{A0FCBF28-1540-49F3-AB8B-E34A4BAB7F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mars.Tests", "MARS.Tests\Mars.Tests.csproj", "{A0FCBF28-1540-49F3-AB8B-E34A4BAB7F1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

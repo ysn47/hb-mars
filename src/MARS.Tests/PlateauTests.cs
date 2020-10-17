@@ -1,10 +1,10 @@
-using MARS.Core.Abstract;
-using MARS.Core.Objects;
+using Mars.Core.Abstract;
+using Mars.Core.Objects;
 using System;
 using System.Linq;
 using Xunit;
 
-namespace MARS.Tests
+namespace Mars.Tests
 {
     public class PlateauTests
     {

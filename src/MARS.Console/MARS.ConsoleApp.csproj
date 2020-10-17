@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MARS.Core\MARS.Core.csproj" />
+    <ProjectReference Include="..\MARS.Core\Mars.Core.csproj" />
   </ItemGroup>
 
 </Project>

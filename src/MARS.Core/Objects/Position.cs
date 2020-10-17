@@ -1,4 +1,4 @@
-﻿namespace MARS.Core.Objects
+﻿namespace Mars.Core.Objects
 {
     public class Position
     {

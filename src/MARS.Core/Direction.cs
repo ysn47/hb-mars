@@ -1,4 +1,4 @@
-﻿namespace MARS.Core
+﻿namespace Mars.Core
 {
     public enum Direction
     {
