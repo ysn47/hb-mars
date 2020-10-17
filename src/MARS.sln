@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mars.Core", "MARS.Core\Mars
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mars.Tests", "MARS.Tests\Mars.Tests.csproj", "{A0FCBF28-1540-49F3-AB8B-E34A4BAB7F1C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AA43E419-7DF5-454F-ABCF-D2CC01075AD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0BCD5A14-EE3B-4206-9CC1-45DCED4EEF60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5F983C1-11F3-401B-BDAA-05118647C823} = {AA43E419-7DF5-454F-ABCF-D2CC01075AD6}
+		{FA71C62A-485F-4F6D-9705-2E4D516E758C} = {AA43E419-7DF5-454F-ABCF-D2CC01075AD6}
+		{A0FCBF28-1540-49F3-AB8B-E34A4BAB7F1C} = {0BCD5A14-EE3B-4206-9CC1-45DCED4EEF60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AEE2A1CF-84A1-4C1E-ABF7-8EA90E13878E}
